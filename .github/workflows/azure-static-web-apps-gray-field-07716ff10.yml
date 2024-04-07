@@ -1,6 +1,3 @@
-# this ignores warnings so they don't kill everything
-env:
-  CI: false
 name: Azure Static Web Apps CI/CD
 
 # this ignores warnings so they don't kill everything
@@ -22,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2 # Use Node.js 20
         with:
           submodules: true
           lfs: false
