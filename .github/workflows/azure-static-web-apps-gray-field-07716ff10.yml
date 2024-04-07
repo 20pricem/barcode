@@ -3,6 +3,10 @@ env:
   CI: false
 name: Azure Static Web Apps CI/CD
 
+# this ignores warnings so they don't kill everything
+env:
+  CI: false
+
 on:
   push:
     branches:
